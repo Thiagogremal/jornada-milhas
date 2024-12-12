@@ -1,0 +1,17 @@
+<button  mat-mini-fab [ngClass]="operacao">
+
+    <!-- Parei aqui -->
+    <img *ngIf="operacao === 'incrementar'" src="assets/icones/add_circle.png" alt="Operador de adição">
+    <img *ngIf="operacao === 'decrementar'" src="assets/icones/do_not_disturb_on.png" alt="Operador de adição">
+    </button>
+
+
+
+
+    <!-- Além disso, lembre-se de usar a diretiva ngClass para adicionar ou remover classes dinamicamente 
+    com base na operação selecionada, garantindo a estilização correta dos botões. -->
+
+    <!-- <button *ngIf="operacao === 'adicionar'" mat-mini-fab class="btn-adicionar">
+    </button>
+  <button *ngIf="operacao === 'remover'" mat-mini-fab class="btn-remover">
+    </button> -->

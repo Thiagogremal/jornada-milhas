@@ -1,0 +1,13 @@
+<section class="secaoPai" appearence="outlined">
+    <div class="primeiraDiv" *ngIf="listaDepoimento.length > 0, else semPensamentos">
+        <div class="segundaDiv" *ngFor="let depoimento of listaDepoimento">
+            <app-depoimentos class="hope" [depoimento]="depoimento"></app-depoimentos>
+        </div>
+    </div>
+</section>
+
+<ng-template #semPensamentos>
+    <div class="ff-inter sem-pensamentos">
+        <p>Ainda não há pensamentos cadastrados!</p>
+    </div>
+</ng-template>
